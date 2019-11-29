@@ -49,4 +49,4 @@ License
 ===
 
 Both data set and code are distributed under the General Public License v3 (GPLv3) license, a copy of which is included in this repository, in the LICENSE file. 
-If you require a different license, please contact us at Marian-Andrei@rizoiu.eu
+If you require a different license and for other questions, please contact us at Marian-Andrei@rizoiu.eu
