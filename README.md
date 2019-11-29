@@ -4,40 +4,30 @@ Occupations
 
 This repository contains code and data accompanying the publication
 “Social Media-Predicted Personality Traits Can Help Match People to
-their Ideal Jobs” \[Kern et al, PNAS’20\].
+their Ideal Jobs” \[Kern et al,
+    PNAS’20\].
 
-\[Kern et al, PNAS’20\] Kern, M. L., McCarthy, P. X., Chakrabarty, D., &
-Rizoiu, M.-A. (2020). Social Media-Predicted Personality Traits Can Help
-Match People to their Ideal Jobs. Proceedings of the National Academy of
-Sciences.
+# Reference:
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you
-execute code within the notebook, the results appear beneath the code.
+    [Kern et al, PNAS'20] Kern, M. L., McCarthy, P. X., Chakrabarty, D., & Rizoiu, M.-A. (2020). Social Media-Predicted Personality Traits Can Help Match People to their Ideal Jobs. Proceedings of the National Academy of Sciences.
 
-Try executing this chunk by clicking the *Run* button within the chunk
-or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*.
+# Repository content:
 
-``` r
-plot(cars)
-```
+# Additional data file:
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
-
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or
-by pressing *Ctrl+Alt+I*.
-
-When you save the notebook, an HTML file containing the code and output
-will be saved alongside it (click the *Preview* button or press
-*Ctrl+Shift+K* to preview the HTML file).
-
-The preview shows you a rendered HTML copy of the contents of the
-editor. Consequently, unlike *Knit*, *Preview* does not run any R code
-chunks. Instead, the output of the chunk when it was last run in the
-editor is displayed.
+The following files cannot be publicly shared due to the Twitter’s and
+IBM Watson’s Terms of Service. However, these files could be provided
+privately upon request, requests are evaluated at a case-by-case basis.
+\* `data/uniq_data.csv` – contains the Big5 and the personal values (10
+features) for every user in the occuaption prediction part of the paper;
+\* `data/uniq_data_big5.csv` – contains solely the Big5 traits for the
+users above (useful for the ablation study); \*
+`data/uniq_data_values.csv` – contains solely the personal values for
+the users above (useful for the ablation study).
 
 # License
 
-Both dataset and code are distributed under the Creative Commons
-Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license, a
-copy of which can be obtained following this link. If you require a
-different license, please contact us at <Marian-Andrei@rizoiu.eu>
+Both data set and code are distributed under the General Public License
+v3 (GPLv3) license, a copy of which is included in this repository, in
+the LICENSE file. If you require a different license, please contact us
+at <Marian-Andrei@rizoiu.eu>
