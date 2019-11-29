@@ -83,7 +83,7 @@ plot(x = toPlot$X, y = toPlot$Y, pch = 19, col = add.alpha(colors, alpha=0.5)[cl
 text(x = toPlot[squarePlot, "X"], y = toPlot[squarePlot, "Y"], labels = toPlot[squarePlot, "ProfessionPlot"], cex=0.75) # , pos=3
 # legend("topright", legend = names(colors), pch = 1, col = colors, bty = "n")
 
-pdf(file = "plots/professions-explore-20-cluster.pdf", width = 8, height = 6)
+png(file = "plots/professions-explore-20-cluster.png", res = 200, width = 8, height = 6, units = "in")
 ggplot(data = toPlot, aes(x = X , y = Y, color = Cluster)) + 
   geom_point(size = 3) +
   scale_color_manual(values=add.alpha(colors, alpha=0.6), guide=FALSE) +
@@ -93,3 +93,4 @@ ggplot(data = toPlot, aes(x = X , y = Y, color = Cluster)) +
   theme_bw() +
   theme( axis.title.x=element_blank(), axis.title.y=element_blank())
 dev.off()
+
