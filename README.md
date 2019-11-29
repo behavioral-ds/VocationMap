@@ -9,9 +9,17 @@ their Ideal Jobs” \[Kern et al,
 
 # Reference:
 
-    [Kern et al, PNAS'20] Kern, M. L., McCarthy, P. X., Chakrabarty, D., & Rizoiu, M.-A. (2020). Social Media-Predicted Personality Traits Can Help Match People to their Ideal Jobs. Proceedings of the National Academy of Sciences.
+    [Kern et al, PNAS'20] Kern, M. L., McCarthy, P. X., Chakrabarty, D., & Rizoiu, M.-A. (2020). Social Media-Predicted
+    Personality Traits Can Help Match People to their Ideal Jobs. Proceedings of the National Academy of Sciences.
 
 # Repository content:
+
+  - `prediction-step1-run-prediction.sh`
+  - `prediction-step2-read-prediction-models-from-Python.R`
+  - `prediction-step3-plot-prediction.R`
+  - `predict-profession-python.ipynb`
+  - `utils.R`
+  - `vocation-map.R`
 
 # Additional data file:
 
