@@ -2,7 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-/data/uniq_data.csv
-/data/uniq_data_big5.csv
-/data/uniq_data_values.csv
-/data/study3_data.csv.xz
+## private data files
+/data/10_professions_data.csv.xz
+/data/10_professions_data_big5.csv.xz
+/data/10_professions_data_values.csv.xz
+/data/all_users_data.csv.xz

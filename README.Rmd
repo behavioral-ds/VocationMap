@@ -19,7 +19,8 @@ Repository content:
 
 This repository contains the following code scripts:  
 
-* `scripts/vocation-map.R` -- R script to build the Vocation Map starting from occupation psychological profiles (stored in the file `data/profession-profiles.csv`);
+* `scripts/build-professions-profiles.R` -- R script that starts from `data/all_users_data.csv.xz`, and builds the profession profiles (stored in the file `data/profession-profiles.csv`);
+* `scripts/vocation-map.R` -- R script that starts from `data/profession-profiles.csv` to build the Vocation Map starting from occupation psychological profiles;
 * `scripts/predict-profession-python.ipynb` -- Python Jupyter notebook to build predictors for forecasting user occupation.
 * `scripts/prediction-step1-run-prediction.sh` -- Bash script to transform the Jupyter notebook to a `py` file and run it without a graphical interface;
 * `scripts/prediction-step2-read-prediction-models-from-Python.R` -- R script (using the `reticulate` package, which reads Python data sctructures produced by `scripts/predict-profession-python.ipynb` and builds R structures);
@@ -44,9 +45,10 @@ Additional data file:
 The following files cannot be publicly shared due to the Twitter's and IBM Watson's Terms of Service.
 However, these files could be provided privately upon request, requests are evaluated at a case-by-case basis.
 
-* `data/uniq_data.csv` -- contains the Big5 and the personal values (10 features) for every user in the occupation prediction part of the paper;
-* `data/uniq_data_big5.csv` -- contains solely the Big5 traits for the users above (useful for the ablation study);
-* `data/uniq_data_values.csv` -- contains solely the personal values for the users above (useful for the ablation study).
+* `data/all_users_data.csv.xz` -- contains the psychological profiles of all 128,278 users in our study;
+* `data/10_professions_data.csv.xz` -- contains the Big5 and the personal values (10 features) for 38,073 users in the occupation prediction part of the paper;
+* `data/10_professions_data_big5.csv.xz` -- contains solely the Big5 traits for the 38,073 users above (useful for the ablation study);
+* `data/10_professions_data_values.csv.xz` -- contains solely the personal values for the 38,073 users above (useful for the ablation study).
 
 
 License
