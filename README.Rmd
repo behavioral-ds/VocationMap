@@ -24,15 +24,19 @@ This repository contains the following code scripts:
 * `scripts/prediction-step1-run-prediction.sh` -- Bash script to transform the Jupyter notebook to a `py` file and run it without a graphical interface;
 * `scripts/prediction-step2-read-prediction-models-from-Python.R` -- R script (using the `reticulate` package, which reads Python data sctructures produced by `scripts/predict-profession-python.ipynb` and builds R structures);
 * `scripts/prediction-step3-plot-prediction.R` -- R script that plots the prediction performance indicators (Precision, Recall, F1 score and Accuracy);
+* `scripts/construct-confusion-matrix.R` -- R script that loads the prediction results (see `data/prediction-results`) and builds the confusion matrix.
 * `scripts/utils.R` -- additional functions for reading, writing data and plotting.
 
 The following data and plots is also available:
 
 * `data/profession-profiles.csv` -- contains the psychological profiles for each occupation in the Vocation Map.
+* `data/prediction-results/*` -- CSV files containing the model prediction for each classifier, and each fold.
 * `plots/vocation-map-static.pdf` -- a static version of the Vocation Map. 
 * `plots/vocation-map-interactive.html` -- the interactive version of the Vocation Map. Also available at http://bit.ly/vocation-map-interactive .
+* `plots/confusion-heatmap-dendogram.pdf` -- the confusion map for the XGBoost classifier (based on `data/prediction-results/*`)
 
 ![A static version of the Vocation Map.](plots/vocation-map-static.png)
+![Confusion map showing that even when the prediction is wrong, it is still pretty good.](plots/confusion-heatmap-dendogram.png)
 
 Additional data file:
 ===

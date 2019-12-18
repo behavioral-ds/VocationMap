@@ -158,7 +158,7 @@ library(readr)
 ## Version 1: an enhanced matlab jet color scheme, containing cyan also
 myColors <- colorRampPalette(c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"))
 ## Version 2: based on the orange color scheme
-myColors <- function(n, color_scheme = "blues.csv") { #"magenta.csv" "blues.csv" "orange.csv"
+myColors <- function(n, color_scheme = "data/blues.csv") { #"magenta.csv" "blues.csv" "orange.csv"
   my_col <- rgb(read.csv(color_scheme, header=FALSE))
   return(colorRampPalette(colors = my_col)(n))
 }

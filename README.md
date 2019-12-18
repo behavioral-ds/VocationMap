@@ -31,6 +31,9 @@ This repository contains the following code scripts:
   - `scripts/prediction-step3-plot-prediction.R` – R script that plots
     the prediction performance indicators (Precision, Recall, F1 score
     and Accuracy);
+  - `scripts/construct-confusion-matrix.R` – R script that loads the
+    prediction results (see `data/prediction-results`) and builds the
+    confusion matrix.
   - `scripts/utils.R` – additional functions for reading, writing data
     and plotting.
 
@@ -38,13 +41,19 @@ The following data and plots is also available:
 
   - `data/profession-profiles.csv` – contains the psychological profiles
     for each occupation in the Vocation Map.
+  - `data/prediction-results/*` – CSV files containing the model
+    prediction for each classifier, and each fold.
   - `plots/vocation-map-static.pdf` – a static version of the Vocation
     Map.
   - `plots/vocation-map-interactive.html` – the interactive version of
     the Vocation Map. Also available at
     <http://bit.ly/vocation-map-interactive> .
+  - `plots/confusion-heatmap-dendogram.pdf` – the confusion map for the
+    XGBoost classifier (based on `data/prediction-results/*`)
 
 ![A static version of the Vocation Map.](plots/vocation-map-static.png)
+![Confusion map showing that even when the prediction is wrong, it is
+still pretty good.](plots/confusion-heatmap-dendogram.png)
 
 # Additional data file:
 
@@ -64,5 +73,5 @@ privately upon request, requests are evaluated at a case-by-case basis.
 
 Both data set and code are distributed under the General Public License
 v3 (GPLv3) license, a copy of which is included in this repository, in
-the LICENSE file. If you require a different license, please contact us
-at <Marian-Andrei@rizoiu.eu>
+the LICENSE file. If you require a different license and for other
+questions, please contact us at <Marian-Andrei@rizoiu.eu>
