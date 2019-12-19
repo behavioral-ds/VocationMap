@@ -11,7 +11,7 @@ require(RColorBrewer)
 require(dplyr)
 source("scripts/utils.R")
 
-myNames <- c("Handle", "Profession", "Openness", "Conscientousness", "Extraversion", "Agreeableness", "Emotional_Range", 
+myNames <- c("Profession", "Openness", "Conscientousness", "Extraversion", "Agreeableness", "Emotional_Range", 
              "Conversation", "Openness to Change", "Hedonism", "Self-enhancement", "Self-transcendence")
 
 twitters <- read_csv("data/all_users_data.csv.xz", col_names = T)
@@ -29,7 +29,7 @@ df <- twitters %>%
   filter(Profession %in% profs) %>%
   group_by(Profession) %>%  
   add_tally() %>%
-  summarize_at(vars(-group_cols(), -"Handle"), median, na.rm = T) %>%
+  summarize_at(vars(-group_cols()), median, na.rm = T) %>%
   arrange(Profession)
 df$Profession <- as.factor(as.character(df$Profession))
 
