@@ -9,9 +9,9 @@ PNAS’20\]](https://www.pnas.org/content/116/52/26459).
 
 # Reference:
 
-    [Kern et al, PNAS'20] Kern, Margaret L., Paul X. McCarthy, Deepanjan Chakrabarty, and Marian-Andrei Rizoiu. 2019. 
-    “Social Media-Predicted Personality Traits and Values Can Help Match People to Their Ideal Jobs.” Proceedings of 
-    the National Academy of Sciences 116(52):26459–64. https://doi.org/10.1073/pnas.1917942116 
+    [Kern et al, PNAS'20] Kern, Margaret L., Paul X. McCarthy, Deepanjan Chakrabarty, and Marian-Andrei Rizoiu. 
+    2019. “Social Media-Predicted Personality Traits and Values Can Help Match People to Their Ideal Jobs.” 
+    Proceedings of the National Academy of Sciences 116(52):26459–64. https://doi.org/10.1073/pnas.1917942116 
 
 # Repository content:
 
